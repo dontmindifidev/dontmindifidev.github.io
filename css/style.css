@@ -1,0 +1,16 @@
+body {
+  background-color:  #191919;
+  color: white;
+  font-size: 32pt;
+  font-family: "Helvetica", sans-serif;
+}
+
+.outter-container {
+  background: #161616;
+
+}
+
+#container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
