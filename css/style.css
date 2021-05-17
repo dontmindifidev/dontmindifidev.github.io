@@ -66,6 +66,11 @@ img {
   opacity: 1;
 }
 
+li {
+font-size: 1.6rem;
+list-style-type: none;
+}
+
 nav {
   text-align: center;
   margin-top: 20px;
@@ -75,6 +80,7 @@ nav {
   padding: 8px 0;
   font-weight: bold;
   opacity: 0.3;
+list-style-type: none;
   transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -103,7 +109,6 @@ nav {
   background-color: rgba(255,255,255,0.7);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: all .2s ease-in-out
 }
 
 .interest .divider {
@@ -161,11 +166,3 @@ nav {
 .green { background-color: green; }
 .blue { background-color: blue; }
 .purple { background-color: purple; }
-
-
-@media (min-width: 750px) {
-  .interest:hover {
-    scale: 1.1;
-  }
-}
-
