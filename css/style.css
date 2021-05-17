@@ -22,7 +22,7 @@ body {
 }
 
 .accented-section {
-  background-color: rgba(79,156,184, 0.05);
+  /* background-color: rgba(79,156,184, 0.1); */
 }
 
 .about {
@@ -75,7 +75,6 @@ nav {
   padding: 8px 0;
   font-weight: bold;
   opacity: 0.3;
-  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .menu li:hover {
@@ -86,8 +85,14 @@ nav {
 .menu .selected {
   opacity: 1;
   cursor:default;
-  border-bottom: 3px solid currentColor;
+  color: #FFF;
+  background-color: #000;
+  border-radius: 10px;
 }
+
+.menu .selected:hover {
+  color: #FFF;
+} 
 
 #image-container {
   padding: 40px;
@@ -103,14 +108,15 @@ nav {
   background-color: rgba(255,255,255,0.7);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: all .2s ease-in-out
+  text-align: center;
 }
 
-.interest .divider {
-  height: 2px;
-  border-radius: 3px;
-  background-color:#4f9cb8;
-  margin: 10px 0;
+.interest p {
+  padding: 20px;
+}
+
+.interest img {
+  border-radius: 10px 10px 0 0;
 }
 
 .project {
@@ -156,16 +162,25 @@ nav {
   .matchpoint-accent { color: #E6FE52; }
 } */
 
-/* Testing classes */
-.red { background-color: red; }
-.green { background-color: green; }
-.blue { background-color: blue; }
-.purple { background-color: purple; }
-
-
-@media (min-width: 750px) {
-  .interest:hover {
-    scale: 1.1;
-  }
+.menu .selected {
+  opacity: 1;
+  cursor:default;
+  border-bottom: 3px solid currentColor;
 }
 
+@media (min-width: 750px) {
+  .menu .selected {
+    background-color: initial;
+    color: #000;
+    border-radius: 0;
+    border-bottom: 3px solid currentColor;
+  }
+
+  .menu .selected:hover {
+    color: #000;
+  } 
+
+  .menu li:hover {
+    color: #000;
+  }
+}
