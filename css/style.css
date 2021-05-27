@@ -21,12 +21,24 @@ body {
   max-height: 100%;
 }
 
+.profile {
+  margin: 40px 0;
+}
+
+.tile-body-inner {
+  padding: 30px 0;
+}
+
 .accented-section {
-  /* background-color: rgba(79,156,184, 0.1); */
+  background-color: rgba(0,0,0, 0.025);
 }
 
 .about {
   margin: 40px 0;
+}
+
+.about-app {
+  padding-bottom: 30px;
 }
 
 img {
@@ -112,7 +124,7 @@ nav {
 }
 
 .interest p {
-  padding: 20px;
+  padding: 10px 20px 0 20px;
 }
 
 .interest img {
@@ -169,6 +181,17 @@ nav {
 }
 
 @media (min-width: 750px) {
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .tile-items {
+    display: flex;
+    align-items: stretch;
+  }
+  
   .menu .selected {
     background-color: initial;
     color: #000;
@@ -184,3 +207,10 @@ nav {
     color: #000;
   }
 }
+
+/* Test Styles */
+.red { background-color: red;}
+.blue { background-color: blue;}
+.green { background-color: green;}
+.yellow { background-color: yellow;}
+.purple { background-color: purple;}
