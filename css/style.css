@@ -16,9 +16,8 @@ body {
   max-height: 100%;
 }
 
-#profile-text {
-  display: flex;
-  max-height: 100%;
+.profile-text {
+  padding: 40px 0;
 }
 
 .profile {
@@ -110,9 +109,9 @@ nav {
   padding: 40px;
 }
 
-.center {
+.project-title {
   text-align: center;
-  padding: 20;
+  padding: 40 20 20 20;
 }
 
 .interest {
@@ -136,11 +135,11 @@ nav {
 }
 
 .intervals-section { background: linear-gradient(180deg, rgba(238,165,62,0.1) 0%, #FAFAFA 60%); }
-.meetings-section { background: linear-gradient(180deg, rgba(74,136,182,0.1) 0%, #FAFAFA 60%); }
+.habitapp-section { background: linear-gradient(180deg, rgba(65,124,157,0.1) 0%, #FAFAFA 60%); }
 .matchpoint-section { background: linear-gradient(180deg, rgba(230,254,82,0.1) 0%, #FAFAFA 60%); }
 
 .intervals-accent { color: #EEA63E; }
-.meetings-accent { color: #4A88B6; }
+.habitapp-accent { color: #417c9d; }
 .matchpoint-accent { color: #687513; }
 
 /* 
@@ -190,6 +189,10 @@ nav {
   .tile-items {
     display: flex;
     align-items: stretch;
+  }
+
+  .profile-text {
+    padding: 0;
   }
   
   .menu .selected {
